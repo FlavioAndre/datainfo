@@ -1,0 +1,35 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "br.com.datainfo"
+    },
+    "jhipsterVersion": "5.8.2",
+    "applicationType": "microservice",
+    "baseName": "datainfo",
+    "packageName": "br.com.datainfo",
+    "packageFolder": "br/com/datainfo",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "M2IzMTM4OThlNTRhODgwNjA1MDNjOWNiZGFhMTg2ZTE3MTg3Y2U3MmI2MDhhYWE0YTQzMzdkZTdiOTA0ODEzMDc0MjM4MzNmZGQ2NmM0ODQ4OWMwMTIwNzc0ZDE5NDZhOTFhOTcxZTY2MjdkYTZiMjE1ZjViNmIwNWFhYzI1ODM=",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
