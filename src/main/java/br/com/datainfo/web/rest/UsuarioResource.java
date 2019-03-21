@@ -60,6 +60,12 @@ public class UsuarioResource {
 		return this.usuarioService.filter(nome, Integer.parseInt(perfil), situacao);
 	}
 
+	@GetMapping("/pagination")
+	public Collection<Usuario> pagination(@RequestParam("pagina") String pagina,
+			@RequestParam("limite") String limite) {
+		return this.usuarioService.pagination(pagina, limite);
+	}
+
 	@DeleteMapping("/{id}")
 	public void delete(@PathVariable("id") String id) {
 		this.usuarioService.deleteById(id);

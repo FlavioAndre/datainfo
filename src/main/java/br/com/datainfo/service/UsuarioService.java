@@ -3,6 +3,7 @@ package br.com.datainfo.service;
 import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import br.com.datainfo.domain.Usuario;
@@ -40,5 +41,9 @@ public class UsuarioService {
 
 	public void deleteById(String id) {
 		this.repository.deleteById(Long.valueOf(id));
+	}
+
+	public Collection<Usuario> pagination(String pagina, String limite) {
+		return this.repository.findAll(PageRequest.of(Integer.valueOf(pagina), Integer.valueOf(limite))).getContent();
 	}
 }
